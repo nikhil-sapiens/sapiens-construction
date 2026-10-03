@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/general.css">
+
+        <link rel="stylesheet" href="styles/budget-calculator.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="index.html"><img class="logo" src="assets/logo.png"></a>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+
+                    <li><a href="products.html">PRODUCTS</a></li>
+
+                    <li><a href="budget-calculator.html">BUDGET CALCULATOR</a></li>
+
+                    <li><a href="our-story.html">OUR STORY</a></li>
+                </ul>
+
+                <a href=""><span class="material-symbols-outlined">search</span></a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="calculator-title">Budget Calculator</div>
+
+            <form id="budget-form" novalidate>
+                <input name="area" type="number" min="1" placeholder="Enter plot area in square feet.">
+
+                <input name="rooms" type="number" min="0" placeholder="Number of rooms (On each floor).">
+
+                <input name="washrooms" type="number" min="0" placeholder="Number of washrooms (On each floor).">
+
+                <input name="balconies" type="number" min="0" placeholder="Number of balconies (On each floor).">
+
+                <input name="floors" type="number" min="1" placeholder="Number of floors.">
+
+                <button type="button" onclick="calculateBudget()">Enter</button>
+            </form>
+
+            <section id="calculator-results" hidden>
+                <h2>Recommended quantities</h2>
+                <ul id="recommendations"></ul>
+                <p id="estimated-total"></p>
+            </section>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="">Help</a></li>
+
+                <li><a href="">Privacy</a></li>
+
+                <li><a href="">Terms</a></li>
+
+                <li><a href="">Careers</a></li>
+            </ul>
+
+            <div>&copy; 2026 sapiens Materials. All rights reserved.</div>
+        </footer>
+        
+        <script src="scripts/products.js"></script>
+        <script src="scripts/budget-calculator.js"></script>
+    </body>
+</html>

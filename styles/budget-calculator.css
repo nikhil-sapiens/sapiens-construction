@@ -1,0 +1,82 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main div {
+    font-family: "Edu QLD Hand", cursive;
+    color: brown;
+    font-size: 30px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+main input {
+    outline: none;
+    width: 300px;
+    padding: 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+main input::-webkit-outer-spin-button,
+main input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+main button {
+    padding: 10px 40px;
+    border: 1px solid navy;
+    border-radius: 10px;
+    background-color: white;
+    color: navy;
+    cursor: pointer;
+    transition: all 0.1s;
+    font-size: 25px;
+}
+
+main button:hover {
+    padding: 10px 38px;
+    border: 1px solid #474767;
+    border-radius: 12px;
+    background-color: #474767;
+    color: white;
+}
+
+#calculator-results {
+    width: min(100%, 340px);
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#calculator-results h2 {
+    margin-bottom: 10px;
+    color: navy;
+    font-size: 20px;
+}
+
+#recommendations {
+    padding-left: 20px;
+}
+
+#recommendations li {
+    padding: 4px 0;
+}
+
+#estimated-total {
+    margin-top: 12px;
+    font-weight: 700;
+}

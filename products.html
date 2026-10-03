@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/general.css">
+
+        <link rel="stylesheet" href="styles/products.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Material+Symbols+Rounded" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="index.html"><img class="logo" src="assets/logo.png"></a>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+
+                    <li><a href="products.html">PRODUCTS</a></li>
+
+                    <li><a href="budget-calculator.html">BUDGET CALCULATOR</a></li>
+
+                    <li><a href="our-story.html">OUR STORY</a></li>
+                </ul>
+
+                <a href=""><span class="material-symbols-outlined">search</span></a>
+
+                <a href="cart.html"><span class="material-symbols-outlined">shopping_cart</span></a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="product cement">
+                <img src="assets/cement.png">
+
+                <div class="product-name">Cement</div>
+
+                <div class="product-price">Price: <span>300/Bag</span></div>
+
+                <input class="product-quantity" type="text" placeholder="Bag(s)">
+
+                <button onclick="addToCart('cement');">Add to cart</button>
+            </div>
+
+            <div class="product rebar">
+                <img src="assets/rebar.jpg">
+
+                <div class="product-name">Rebar</div>
+
+                <div class="product-price">Price: <span>100/Kg</span></div>
+
+                <input class="product-quantity" type="text" placeholder="Kilogram(s)">
+
+                <button onclick="addToCart('rebar');">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <img src="assets/bricks.avif">
+
+                <div class="product-name">Bricks</div>
+
+                <div class="product-price">Price: <span>3000/Trolley</span></div>
+
+                <input type="text" placeholder="Trolley(s)">
+
+                <button onclick="addToCart('bricks');">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <img src="assets/aggregate.jpg">
+
+                <div class="product-name">Aggregate</div>
+
+                <div class="product-price">Price: <span>2900/Trolley</span></div>
+
+                <input type="text" placeholder="Trolley(s)">
+
+                <button onclick="addToCart('aggregate');">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <img src="assets/black-river-sand.jpg">
+
+                <div class="product-name">Black River Sand</div>
+
+                <div class="product-price">Price: <span>1900/Trolley</span></div>
+
+                <input type="text" placeholder="Trolley(s)">
+
+                <button onclick="addToCart('black-river-sand');">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <img src="assets/coarse-river-sand.webp">
+
+                <div class="product-name">Coarse River Sand</div>
+
+                <div class="product-price">Price: <span>1900/Trolley</span></div>
+
+                <input type="text" placeholder="Trolley(s)">
+
+                <button onclick="addToCart('coarse-river-sand');">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <img src="assets/worker.avif">
+
+                <div class="product-name">Worker</div>
+
+                <div class="product-price">Price: <span>100/Hour</span></div>
+
+                <input type="text" placeholder="Worker(s)">
+
+                <button onclick="addToCart('worker');">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <img src="assets/white-floor-tiles.png">
+
+                <div class="product-name">White Floor Tiles</div>
+
+                <div class="product-price">Price: <span>500/Box</span></div>
+
+                <input type="text" placeholder="Box(s)">
+
+                <button onclick="addToCart('white-floor-tiles');">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <img src="assets/paint.png">
+
+                <div class="product-name">Paint</div>
+
+                <div class="product-price">Price: <span>600/Container</span></div>
+
+                <input type="text" placeholder="Container(s)">
+
+                <button onclick="addToCart('paint');">Add to cart</button>
+            </div>
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="">Help</a></li>
+
+                <li><a href="">Privacy</a></li>
+
+                <li><a href="">Terms</a></li>
+
+                <li><a href="">Careers</a></li>
+            </ul>
+
+            <div>&copy; 2026 sapiens Materials. All rights reserved.</div>
+        </footer>
+        
+        <script src="scripts/products.js"></script>
+    </body>
+</html>
